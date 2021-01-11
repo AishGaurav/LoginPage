@@ -1,0 +1,69 @@
+<div style="background-color: #FCFCFF;">
+    <div class='parent-container'>
+        <div class='grid-container'>
+            <div class='left-grid'>
+                <div class='logo-container'>
+                    <img src="../../assets/images/3.png" style="height: 80%;">
+                </div>
+                <div class='handshake-container'>
+                    <div class='slogan-image-container' style="height: 20%;">
+                        <img class='handshake-image' src="../../assets/images/We_make_it_Super_Sim.svg" style="height: 60%;">
+                    </div>
+                    <div class='handshake-image-container'>
+                        <img class='handshake-image' src="../../assets/images/5.png" style="height: 50%;">
+                    </div>
+                </div>
+            </div>
+            <div class='right-grid'>
+                <div class='form-container'>
+                    <ul class='navbar-contents'>
+                        <li class='li-elements'><p class="navLinks">Products</p></li>
+                        <li class='li-elements'><p class="navLinks">Solutions</p></li>
+                        <li class='li-elements'><p class="navLinks">Pricing</p></li>
+                        <li class='li-elements'><button class="button" style="color: #9F62C9; background-color: #fff;">Login</button></li>
+                        <li class='li-elements'><button class="button" style="color: #ffffff; background-image: linear-gradient(to right, #9F62C9 , #663399);">Get Started</button></li>
+                    </ul>
+                    <div class='form'>
+                        <img src="../../assets/images/6.png" style="width: 80%; margin-left: 16%;">
+                    </div>
+                </div>                   
+            </div>
+        </div>
+        <div class='bottom-container'>
+            <div class='ad-container'>
+                <div class='repeated-cards'>
+                    <div class='card-container' *ngFor='let i of cards1'>
+                        <div class='card-icon' style="display: flex; height: 30%;">
+                            <img src="../../assets/images/{{i.cardicon}}" style="height: 80%;" class="card-image">
+                        </div>
+                        <div class='card-content'>
+                            <div style="margin: 5px 25px 0px 25px; height: 70%;">
+                                <h6>{{i.heading}}</h6>
+                                <p style="color: #999999;">{{i.content}}</p>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+                <div class='repeated-cards'>
+                    <div class='card-container' *ngFor='let i of cards2'>
+                        <div class='card-icon' style="display: flex; height: 30%;">
+                            <img src="../../assets/images/{{i.cardicon}}" style="height: 80%;" class="card-image">
+                        </div>
+                        <div class='card-content'>
+                            <div style="margin: 5px 25px 0px 25px; height: 70%;">
+                                <h6>{{i.heading}}</h6>
+                                <p style="color: #999999;">{{i.content}}</p>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+                <div class='repeated-cards' style="align-items: flex-start !important;">
+                    <div><img src="../../assets/images/boost.svg" style="height: 60%;"></div>
+                    <div><img src="../../assets/images/hands.svg" style="height: 75%;"></div>
+                    <button class="button" style="color: #663399; margin-top: 10%;">Get an Open Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
